@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Sistemas Operacionais[<span style="color: antiquewhite;">Linux</span>]</h1>
+
+    <section class="container-content">
+        <h2>$O que é o Linux?</h2>
+        <p>
+            Diferente dos sistemas anteriores, Linux não é de fato um sistema operacional, mas um 
+            kernel, criado por Linus Torvalds, de código aberto, ou seja, qualquer pessoa pode modificar,
+            usar e distribuir, mas claro que existem restrições que trataremos mais tarde.
+        </p>
+        <p>
+            O Linux é projetado para ser um sistema multitarefa, ou seja, pode executar várias tarefas ao 
+            mesmo tempo. Também é multiusuário, permitindo que várias pessoas usem o sistema simultaneamente com contas separadas.
+        </p>
+        <p>
+            Existem várias versões do Linux chamadas de distribuições ou "distros", como Ubuntu, Fedora, Debian e CentOS. 
+            Cada distribuição pode ser personalizada para diferentes usos, como servidores, desktops ou dispositivos móveis
+        </p>
+        <p>
+            O Linux é amplamente utilizado em servidores, supercomputadores, dispositivos embarcados e até mesmo em desktops e laptops. 
+            Ele é popular em ambientes de TI por sua segurança, estabilidade e flexibilidade. Além disso, o Android, que é um dos sistemas 
+            operacionais móveis mais populares, é baseado no kernel Linux.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Organização</h2>
+        <p>
+            A forma com que os sistemas baseados em Linux organizam seus diretórios é 
+            bastante semelhante ao sistema MacOs, pois a base de ambos os sistemas é o Unix.
+        </p>
+        <dl>
+            <dt class="def"><strong>/(raiz)</strong></dt>
+            <dd>
+                O diretório raiz é o ponto de partida do sistema de arquivos. Todos os outros diretórios e arquivos estão organizados sob ele.
+            </dd>
+            <dt class="def"><strong>/bin/</strong></dt>
+            <dd>
+                Contém executáveis binários essenciais, ou seja, comandos básicos usados pelo sistema e pelos usuários, como <strong>ls, cat, cp</strong>.
+            </dd>
+            <dt class="def"><strong>/boot/</strong></dt>
+            <dd>
+                Armazena arquivos necessários para inicializar o sistema, incluindo o kernel do Linux e o carregador de inicialização (bootloader), como o <strong>grub</strong>.
+            </dd>
+            <dt class="def"><strong>/dev/</strong></dt>
+            <dd>
+                Contém arquivos especiais que representam dispositivos do sistema, como discos rígidos (<strong>/dev/sda</strong>), terminais e dispositivos USB.
+            </dd>
+            <dt class="def"><strong>/etc/</strong></dt>
+            <dd>
+                Armazena arquivos de configuração do sistema. Aqui ficam arquivos como <strong>/etc/passwd</strong> (para usuários) e <strong>/etc/hosts</strong> (para configuração de rede).
+            </dd>
+            <dt class="def"><strong>/home/</strong></dt>
+            <dd>
+                Diretório de usuários comuns, onde ficam armazenados os arquivos pessoais de cada usuário. Por exemplo, o diretório de um usuário chamado "jose" seria <strong>/home/jose</strong>.
+            </dd>
+            <dt class="def"><strong>/lib/</strong></dt>
+            <dd>
+                Contém bibliotecas compartilhadas essenciais para os programas localizados em <strong>/bin</strong> e <strong>/sbin</strong>, bem como módulos do kernel.
+            </dd>
+            <dt class="def"><strong>/media/</strong></dt>
+            <dd>
+                Usado para montar automaticamente <strong>dispositivos removíveis</strong>, como pendrives, CDs e DVDs.
+            </dd>
+            <dt class="def"><strong>/mnt/</strong></dt>
+            <dd>
+                Um ponto de montagem temporária para sistemas de arquivos. Administradores podem usar este diretório para montar sistemas de arquivos manualmente.
+            </dd>
+            <dt class="def"><strong>/opt/</strong></dt>
+            <dd>
+                Usado para instalação de pacotes de software de terceiros que não fazem parte da instalação padrão do sistema.
+            </dd>
+            <dt class="def"><strong>/proc/</strong></dt>
+            <dd>
+                Um sistema de arquivos virtual que fornece informações sobre processos em execução e outros dados do kernel em tempo real. Cada processo tem um diretório numerado em <strong>/proc</strong>.
+            </dd>
+            <dt class="def"><strong>/root/</strong></dt>
+            <dd>
+                Diretório pessoal do superusuário (root). Diferente do <strong>/home</strong>, é específico para o administrador do sistema.
+            </dd>
+            <dt class="def"><strong>/run/</strong></dt>
+            <dd>
+                Contém arquivos de runtime, que são usados para armazenar dados temporários que o sistema precisa acessar durante a inicialização ou execução.
+            </dd>
+            <dt class="def"><strong>/sbin/</strong></dt>
+            <dd>
+                Contém executáveis de sistema usados principalmente para administração e manutenção do sistema, como <strong>fsck, reboot</strong>, etc.
+            </dd>
+            <dt class="def"><strong>/srv/</strong></dt>
+            <dd>
+                Armazena dados específicos de serviços fornecidos pelo sistema, como servidores web ou FTP.
+            </dd>
+            <dt class="def"><strong>/tmp/</strong></dt>
+            <dd>
+                Diretório para armazenamento de arquivos temporários. Qualquer usuário pode gravar arquivos aqui, mas eles são excluídos após o reinício do sistema ou em intervalos regulares.
+            </dd>
+            <dt class="def"><strong>/usr/</strong></dt>
+            <dd>
+                Contém arquivos de programas de uso geral do sistema, incluindo bibliotecas, executáveis e documentação.
+            </dd>
+            <dt class="def"><strong>/var/</strong></dt>
+            <dd>
+                Armazena arquivos que variam com o tempo, como logs de sistema, filas de impressão e cache. Por exemplo:
+                <strong>/var/log</strong>, que armazena logs do sistema e <strong>/var/spool</strong>, que armazena
+                tarefas pendentes, como trabalho de impressão.
+            </dd>
+        </dl>
+    </section>
+    <section class="container-content">
+        <h2>$Linux.</h2>
+        <p>
+            Como o linux não é de fato o sistema operacional, mas sim o kernel, as distribuições que usam esse kernel
+            possuem similaridades gritantes, entre elas, a dependência do terminal. O terminal do linux é a ferramenta 
+            mais poderosa que o sistema possui. É através dele que o usuário realiza as principais operações na máquina,
+            a exemplo da instalação de programas.
+        </p>
+        <p>
+            As distribuições possuem um programa responsável pela instalação, remoção e atualização de outros programas, esses
+            são os <strong>gerenciadores de pacotes</strong>. Em distros baseadas no <strong>linux Debian</strong>, como Ubuntu  e 
+            Kali linux, o gerenciador de pacores usado é o <strong>apt</strong>. Já em distros baseadas no <strong>Arch Linux</strong>
+            o gerenciador usado é o <strong>packman</strong>.
+        </p>
+        <p>
+            Existem diversas distribuições de sistemas baseados nesse kernel, e por se tratar de um tipo de sistema 
+            amplamente utilizado, a partir de agora nós iremos tratar apenas dele no decorrer do conteúdo, principalmente
+            porque existem muito mais ferramentas para linux que para outros sistemas como <strong>Windows</strong> e <strong>MacOs</strong>.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2 class="pausa">//Progressão</h2>
+        <p>
+            agora que já sabemos pelo menos a base de como a internet funciona e o que são os sistemas 
+            operacionais, vamos finalmente entrar no mais interessante, uso das ferramentas e tecnicas e 
+            conceitos importantes para o hacking.
+        </p>
+    </section>
+
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="./macos.html" target="_self">Anterior</a></li>
+            <li><a href="../conceitos/coleta.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="../seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="../seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="../seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="SO.html">Sistemas operacionais</a></li>
+                    <li><a href="./windows.html" target="_self">Windows</a></li>
+                    <li><a href="./macos.html" target="_self">MacOs</a></li>
+                    <li><a href="./linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../styles/country_style-main.css">
+</head>
+<body>
+
+    <iframe src="../country/menu.html" frameborder="0" width="100%" id="menu-nav"></iframe>
+
+    <section class="container-content">
+        <p>
+            Nessa aba estão localizadas as ferramentas mensionadas ao longo do conteúdo
+            do site (lembrando que estamos falando do ambiente linux).
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Nmap</h2>
+        <p>
+            O Nmap (Network Mapper) é uma ferramenta de código aberto usada 
+            para descoberta e auditoria de segurança em redes.
+        </p>
+        <br>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install nmap
+            <br>
+            <span>sudo</span> nmap --help <span class="pausa">//para ver as opções de comandos existentes</span>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$Gobuster</h2>
+        <p>
+            O Gobuster é uma ferramenta poderosa e muito utilizada por profissionais de segurança da informação 
+            para realizar varreduras em sites e descobrir diretórios e arquivos ocultos.
+        </p>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install gobuster
+            <br>
+            <span>gobuster</span> --help <span class="pausa">//para ver as opções de comando existentes</span>  
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$Aircrack-Ng</h2>
+        <p>
+            O Aircrack-ng é uma suite de ferramentas poderosas para análise de redes sem fio. 
+            Ele permite realizar testes de segurança em redes Wi-Fi, como a captura e craqueamento de senhas WEP e WPA.
+        </p>
+        <br>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install aircrack-ng
+            <br>
+            <span>aircrack-ng</span> --help <span class="pausa">//para ver as opções de comando existentes</span>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$WiFite</h2>
+        <p>
+            WiFite é uma ferramenta de linha de comando automatizada, open-source e multiplataforma, 
+            projetada para auxiliar em testes de penetração de redes Wi-Fi.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install wifite
+            <br>
+            <span>wifite</span> --help <span class="pausa">//para ver as opções de comando existentes</span>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$Metasploit Framework</h2>
+        <p>
+            O Metasploit Framework é uma poderosa ferramenta de código aberto usada 
+            principalmente para testes de penetração e exploração de vulnerabilidades.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <div>
+                <span>sudo</span> apt update
+                <br>
+                <span>sudo</span> apt install -y curl gpg
+                <br>
+                <span>curl</span> https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+                <br>
+                <span>chmod</span> +x msfinstall
+                <br>
+                <span>sudo</span> ./msfinstall
+                <br>
+                <span>msfconsole</span> <span class="pausa">//para iniciar a aplicação</span>
+            </div>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$John The Ripper</h2>
+        <p>
+            John the Ripper (ou apenas John) é uma ferramenta de cracking de senhas, 
+            amplamente utilizada para testes de segurança e recuperação de senhas.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install john
+            <br>
+            <span>john</span> --help <span class="pausa">//para ver as opções de comando existentes</span>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$Hydra</h2>
+        <p>
+            O Hydra é uma ferramenta de ataque de força bruta rápida e eficiente, usada para testar credenciais 
+            de login em diversos serviços de rede, como SSH, FTP, HTTP, entre outros.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update
+            <br>
+            <span>sudo</span> apt install hydra
+            <br>
+            <span>hydra</span> -h <span class="pausa">//para ver as opções de comando existentes</span>
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$SET</h2>
+        <p>
+            O Social-Engineer Toolkit (SET) é uma ferramenta de código aberto usada para testes de 
+            penetração e simulação de ataques de engenharia social.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt update && <span>sudo</span> apt upgrade
+            <br>
+            <span>sudo</span> apt install git python3 python3-pip
+            <br>
+            <span>git</span> clone https://github.com/trustedsec/social-engineer-toolkit.git
+            <br>
+            <span>cd</span> social-engineer-toolkit
+            <br>
+            <span>python3</span> -m venv venv
+            <br>
+            <span>source</span> venv/bin/activate
+            <br>
+            <span>pip3</span> install -r requirements.txt
+            <br>
+            <span>sudo</span> python3 setoolkit
+        </code>
+    </section>
+    <section class="container-content">
+        <h2>$Nikto</h2>
+        <p>
+            Nikto é uma ferramenta de scanner de vulnerabilidades para servidores web. 
+            É uma ferramenta de código aberto que ajuda na identificação de problemas de segurança em servidores HTTP.
+        </p>
+        <strong>Instalação</strong>
+        <code>
+            <span>sudo</span> apt install perl libnet-ssl-perl libio-socket-ssl-perl
+            <br>
+            <span>git</span> clone https://github.com/sullo/nikto.git
+            <br>
+            <span>cd</span> nikto/program
+            <br>
+            <span>perl</span> nikto.pl -h <span class="pausa">URL_do_alvo</span>
+        </code>
+    </section>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="../country/seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="../country/seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="../country/seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="../country/seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="../country/SO.html">Sistemas operacionais</a></li>
+                    <li><a href="../country/SO/windows.html" target="_self">Windows</a></li>
+                    <li><a href="../country/SO/macos.html" target="_self">MacOs</a></li>
+                    <li><a href="../country/SO/linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../styles/country_style-main.css">
+</head>
+<body>
+    <iframe src="../country/menu.html" frameborder="0" width="100%"></iframe>
+
+    <main>
+        <section class="container-content" id="http">
+            <h2>$HTTP</h2>
+            <p>
+                HTTP é o protocolo de transferência de hipertexto, ele é usado para transferir
+                informações na web. Ele é responsável por definir como os dados são formatados e 
+                transmitidos entre um cliente e um servidor. As mensagens HTTP são baseadas em texto
+                e incluem métodos, URL's, cabeçalhos e corpo de mensagem.
+            </p>
+            <dl>
+                <dt class="def"><strong>GET/</strong></dt>
+                <dd>
+                    O método GET solicita a recuperação de um recurso.
+                </dd>
+                <dt class="def"><strong>POST/</strong></dt>
+                <dd>
+                    O método POST envia dados ao servidor para criar ou atualizar um recurso.
+                </dd>
+                <dt class="def"><strong>PUT/</strong></dt>
+                <dd>
+                    O método PUT envia dados ao servidor para substituir um recurso existente.
+                </dd>
+                <dt class="def"><strong>DELETE/</strong></dt>
+                <dd>
+                    O método DELETE solicita a remoção de um recurso.
+                </dd>
+            </dl>
+            <p>
+                O HTTP também possui códigos de status, que indicam o resultado da solicitação.
+            </p>
+            <dl>
+                <dt class="def"><strong>200/</strong></dt>
+                <dd>
+                    O status code 200 indica que a solicitação foi bem sucedida.
+                </dd>
+                <dt class="def"><strong>404/</strong></dt>
+                <dd>
+                    O status code 404 indica que o recurso solicitado não foi encontrado.
+                </dd>
+                <dt class="def"><strong>500/</strong></dt>
+                <dd>
+                    O status code 500 indica que houve um erro no servidor.
+                </dd>
+            </dl>
+        </section>
+
+        <section class="container-content" id="ftp">
+            <h2>$FTP</h2>
+            <p>
+                FTP é o protocolo de transferência de arquivos entre um cliente e um servidor. Ele
+                permite que os usuários façam upload e download de arquivos, além de realizar outras 
+                operações de gerenciamento de arquivos, como criação, remoção e navegação em diretórios.
+                O FTP suporta dois modos principais de transferência de arquivos:
+            </p>
+            <dl>
+                <dt class="def"><strong>ASCII/</strong></dt>
+                <dd>
+                    Usado para transferir arquivos de texto, convertendo os caracteres para o formato correto
+                    do sistema de destino.
+                </dd>
+                <dt class="def"><strong>Binário/</strong></dt>
+                <dd>
+                    Usado para transferir arquivos binários (como imagens, vídeos e executáveis), garantindo
+                    que os arquivos arquivos sejam transferidos exatamente como estão, sem conversões.
+                </dd>
+            </dl>
+        </section>
+
+        <section class="container-content" id="smtp">
+            <h2>$SMTP</h2>
+            <p>
+                O SMTP (Simple Mail Transfer Protocol) é o protocolo padrão utilizado para o envio de
+                e-mails pela internet. Ele define como os e-mails são transmitidos entre servidores de 
+                correio eletrônico e entre clientes e servidores. O SMTP é responsável por garantir que as
+                mensagens sejam entregues ao servidor correto e possam ser enviadas para seus destinatários, e
+                suas principais funções são:
+            </p>
+            <dl>
+                <dt class="def"><strong>Envio%de%E-mails/</strong></dt>
+                <dd>
+                    O SMTP é utilizado principalmente para enviar e-mails do cliente de e-mail (como Outlook, Gmail, etc.)
+                    para um servidor de correio e para transferir mensagens entre servidores de e-mail.
+                </dd>
+                <dt class="def"><strong>Encaminhamento/</strong></dt>
+                <dd>
+                    Quando um servidor de e-mail recebe uma mensagem que não é destinada ao seu domínio, ele usa o SMTP 
+                    para encaminhá-la ao servidor correto do destinatário.
+                </dd>
+                <dt class="def"><strong>Autenticação/</strong></dt>
+                <dd>
+                    O SMTP permite a autenticação de usuários (nome de usuário e senha), garantindo que apenas remetentes 
+                    autorizados possam enviar e-mails. Isso é uma camada adicional para evitar envios não autorizados e reduzir o spam.
+                </dd>
+                <dt class="def"><strong>Entrega%de%Mensagens/</strong></dt>
+                <dd>
+                    O protocolo SMTP funciona enviando mensagens do remetente para o servidor de e-mail do destinatário. O cliente de e-mail 
+                    envia a mensagem para o servidor SMTP, que, em seguida, tenta localizar o servidor responsável pelo domínio do destinatário e entrega a mensagem.
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="udp">
+            <h2>$UDP</h2>
+            <p>
+                O UDP (User Datagram Protocol) é um protocolo de comunicação da camada de transporte usado na internet. 
+                Diferente do TCP (Transmission Control Protocol), o UDP é um protocolo não orientado à conexão e
+                sem garantia de entrega. Ele é usado quando a velocidade é mais importante que a confiabilidade, 
+                tornando-o ideal para aplicações em tempo real e onde pequenas perdas de dados são toleráveis. Algumas
+                características desse protocolo são:
+            </p>
+            <dl>
+                <dt class="def"><strong>Não%Orientado%à%Conexão/</strong></dt>
+                <dd>
+                    O UDP não estabelece uma conexão prévia entre os dispositivos antes de enviar dados. Ele simplesmente 
+                    envia os pacotes para o destino, sem verificar se o destinatário está pronto ou disponível.
+                </dd>
+                <dt class="def"><strong>Sem%Garantia%de%Entrega/</strong></dt>
+                <dd>
+                    Ao contrário do TCP, o UDP não garante que os pacotes enviados chegarão ao 
+                    destino ou que serão recebidos na ordem correta. Isso pode resultar na perda 
+                    ou duplicação de pacotes durante a transmissão.
+                </dd>
+                <dt class="def"><strong>Baixa%Latência/</strong></dt>
+                <dd>
+                    Devido à ausência de verificações e controle de fluxo, o UDP é mais rápido que o TCP. Isso faz com que 
+                    ele seja ideal para aplicações que exigem baixa latência, como streaming de áudio/vídeo e jogos online.
+                </dd>
+                <dt class="def"><strong>Transmissão%de%Pacotes/</strong></dt>
+                <dd>
+                    O UDP envia pacotes individuais chamados datagramas, que são enviados de forma independente. Cada 
+                    datagrama contém todas as informações necessárias para seu encaminhamento, 
+                    mas não há mecanismos de reenvio em caso de falha.
+                </dd>
+                <dt class="def"><strong>Simples%e%Eficiente/</strong></dt>
+                <dd>
+                    O cabeçalho do UDP é muito menor que o do TCP, contendo apenas informações essenciais, 
+                    como portas de origem e destino, comprimento do pacote e uma soma de verificação
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="dns">
+            <h2>$DNS</h2>
+            <p>
+                O DNS (Domain Name System) é um protocolo fundamental da internet que traduz nomes de domínio
+                (como www.exemplo.com) em endereços IP (como 192.0.2.1), que são utilizados pelos dispositivos 
+                para localizar e se comunicar com servidores e outros dispositivos na rede. Esse processo de 
+                conversão é essencial, pois, embora os seres humanos usem nomes fáceis de lembrar, os computadores 
+                e roteadores usam números IP para identificar e acessar recursos na internet. O DNS funciona da seguinte 
+                maneira: 
+            </p>
+            <dl>
+                <dt class="def"><strong>Consulta%DNS%Local/</strong></dt>
+                <dd>
+                    O dispositivo do usuário primeiro verifica o cache local (uma memória temporária) 
+                    para ver se já conhece o endereço IP correspondente ao domínio.
+                </dd>
+                <dt class="def"><strong>Servidor%DNS%Recursivo/</strong></dt>
+                <dd>
+                    Se o cache não contiver a informação, a consulta é enviada a um servidor DNS recursivo.
+                </dd>
+                <dt class="def"><strong>Servidores%Raiz/</strong></dt>
+                <dd>
+                    Se o servidor recursivo não souber a resposta, ele consulta os servidores raiz do DNS, 
+                    que fornecem o endereço do servidor TLD relevante.
+                </dd>
+                <dt class="def"><strong>Servidor%TLD/</strong></dt>
+                <dd>
+                    O servidor TLD direciona a consulta para o servidor autoritativo que possui o endereço IP do domínio solicitado.
+                </dd>
+                <dt class="def"><strong>Servidor%Autorizado/</strong></dt>
+                <dd>
+                    O servidor autoritativo responde com o endereço IP associado ao nome de domínio, que é então devolvido ao dispositivo do usuário
+                </dd>
+                <dt class="def"><strong>Acesso%ao%Site/</strong></dt>
+                <dd>
+                    O navegador usa o endereço IP retornado para se conectar ao servidor do site e exibir a página solicitada.
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="hdlc">
+            <h2>$HDLC</h2>
+            <p>
+                HDLC, ou High-Level Data Link Control, é um protocolo de comunicação usado na camada de enlace 
+                de dados em redes de computadores. Ele foi desenvolvido para fornecer um método confiável de 
+                transmissão de dados entre dispositivos em uma rede. As principais características do HDLC incluem:
+            </p>
+            <dl>
+                <dt class="def"><strong>Controle%de%Erros/</strong></dt>
+                <dd>
+                    Usa técnicas como verificação de redundância cíclica (CRC) para garantir que os dados sejam transmitidos sem erros.
+                </dd>
+                <dt class="def"><strong>Controles%de%Fluxo/</strong></dt>
+                <dd>
+                    Regula a velocidade de transmissão de dados entre dispositivos, evitando sobrecarga.
+                </dd>
+                <dt class="def"><strong>Estrutura%de%Quadro/</strong></dt>
+                <dd>
+                    Os dados são organizados em quadros, que contêm informações de controle, dados úteis e sequências de verificação.
+                </dd>
+                <dt class="def"><strong>Modos%de%Operação/</strong></dt>
+                <dd>
+                    Suporta vários modos, como ponto a ponto (entre dois dispositivos) e multiponto (entre um dispositivo e múltiplos outros).
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="mac">
+            <h2>$MAC</h2>
+            <p>
+                MAC, ou Media Access Control, refere-se a um protocolo que regula o acesso ao meio de transmissão em redes de computadores. 
+                No contexto de redes, o termo "MAC" pode se referir a duas coisas principais:
+            </p>
+            <dl>
+                <dt class="def"><strong>Endereço%MAC/</strong></dt>
+                <dd>
+                    Um identificador único atribuído a dispositivos de rede para comunicação em uma rede local. Cada interface de rede 
+                    (como um adaptador Ethernet ou Wi-Fi) possui um endereço MAC, que geralmente é representado em formato hexadecimal 
+                    (por exemplo, 00:1A:2B:3C:4D:5E). Ele é usado para direcionar dados dentro de uma rede local, permitindo que os dispositivos 
+                    se identifiquem uns aos outros.
+                </dd>
+                <dt class="def"><strong>Protocolo%MAC/</strong></dt>
+                <dd>
+                    Parte da camada de enlace de dados do modelo OSI, o protocolo MAC define como os dispositivos em uma rede local acessam o 
+                    meio de transmissão e se comunicam entre si. Isso inclui regras para evitar colisões de dados quando múltiplos dispositivos 
+                    tentam transmitir ao mesmo tempo. Existem diferentes métodos de controle de acesso ao meio, como CSMA/CD (Carrier Sense Multiple 
+                    Access with Collision Detection) usado em redes Ethernet, e CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) usado em redes Wi-Fi.
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="icmp">
+            <h2>$ICMP</h2>
+            <p>
+                ICMP, ou Internet Control Message Protocol, é um protocolo da camada de rede usado para enviar mensagens de controle e 
+                erro entre dispositivos em uma rede IP. Ele é parte fundamental do funcionamento do protocolo IP e ajuda na gestão e 
+                diagnóstico de redes.
+            </p>
+            <dl>
+                <dt class="def"><strong>Relatar%Erros/</strong></dt>
+                <dd>
+                    O ICMP informa sobre problemas na entrega de pacotes, como quando um destino não pode ser alcançado 
+                    (Destination Unreachable) ou quando um pacote é descartado devido a uma Time Exceeded 
+                    (quando o tempo de vida de um pacote expira).
+                </dd>
+                <dt class="def"><strong>Diagnóstico/</strong></dt>
+                <dd>
+                    Ferramentas como <strong>ping</strong> e <strong>traceroute</strong> usam ICMP para testar a conectividade 
+                    entre dispositivos e rastrear o caminho que os pacotes seguem pela rede.
+                </dd>
+                <dt class="def"><strong>Informações%de%Controle/</strong></dt>
+                <dd>
+                    O ICMP pode enviar mensagens sobre o estado da rede e realizar funções como redirecionamento de pacotes.
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="smb">
+            <h2>$SMB</h2>
+            <p>
+                SMB, ou Server Message Block, é um protocolo de rede utilizado para fornecer acesso a arquivos, impressoras 
+                e recursos de rede em sistemas operacionais, principalmente no ambiente Windows. Ele permite que aplicações 
+                em um computador se conectem a arquivos e serviços em outro computador em uma rede.
+            </p>
+            <dl>
+                <dt class="def"><strong>Compartilhamento%de%Arquivos/</strong></dt>
+                <dd>
+                    Permite que usuários acessem e compartilhem arquivos em rede, independentemente de onde estejam armazenados.
+                </dd>
+                <dt class="def"><strong>Impressão%em%Rede/</strong></dt>
+                <dd>
+                    Facilita o acesso a impressoras conectadas a outros dispositivos na rede.
+                </dd>
+                <dt class="def"><strong>Comunicação%entre%Processos/</strong></dt>
+                <dd>
+                    Permite que processos em diferentes computadores se comuniquem.
+                </dd>
+                <dt class="def"><strong>Autenticação%e%Controle%de%Acesso/</strong></dt>
+                <dd>
+                    O SMB suporta autenticação de usuários e controle de permissões, garantindo que apenas usuários 
+                    autorizados possam acessar recursos compartilhados.
+                </dd>
+            </dl>
+        </section>
+        <section class="container-content" id="rpc">
+            <h2>$RPC</h2>
+            <p>
+                RPC, ou Remote Procedure Call, é um protocolo que permite que um programa em um computador execute um 
+                procedimento (ou sub-rotina) em outro computador em uma rede como se fosse uma chamada local. O RPC 
+                abstrai as complexidades da comunicação em rede, permitindo que os desenvolvedores se concentrem na 
+                lógica do aplicativo.
+            </p>
+            <dl>
+                <dt class="def"><strong>Transparência/</strong></dt>
+                <dd>
+                    O desenvolvedor não precisa se preocupar com detalhes de rede, como endereçamento ou gerenciamento 
+                    de conexões. O RPC faz isso automaticamente.
+                </dd>
+                <dt class="def"><strong>Comunicação%entre%Processos/</strong></dt>
+                <dd>
+                    O RPC permite a comunicação entre processos que podem estar 
+                    em diferentes sistemas operacionais ou plataformas.
+                </dd>
+                <dt class="def"><strong>Protocolos%de%Transporte/</strong></dt>
+                <dd>
+                    O RPC pode usar diferentes protocolos de transporte, como TCP ou UDP, 
+                    para enviar e receber mensagens.
+                </dd>
+                <dt class="def"><strong>Formato%de%Dados/</strong></dt>
+                <dd>
+                    Os dados enviados entre o cliente e o servidor precisam ser serializados (transformados em 
+                    um formato que pode ser transmitido) e deserializados (transformados de volta para o formato 
+                    original) para garantir que a comunicação funcione corretamente.
+                </dd>
+                <dt class="def"><strong>Sincronização/</strong></dt>
+                <dd>
+                    O RPC pode ser síncrono (o cliente espera pela resposta do servidor) ou assíncrono (o cliente 
+                    continua sua execução enquanto aguarda a resposta).
+                </dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="../country/seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="../country/seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="../country/seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="../country/seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="../country/SO.html">Sistemas operacionais</a></li>
+                    <li><a href="../country/SO/windows.html" target="_self">Windows</a></li>
+                    <li><a href="../country/SO/macos.html" target="_self">MacOs</a></li>
+                    <li><a href="../country/SO/linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Conceitos[<span style="color: antiquewhite;">Coleta de informações</span>]</h1>
+    <section class="container-content">
+        <h2>$Significado</h2>
+        <p>
+            O próprio nome já é bastante intuitivo,a coleta de informações se trata da parte de 
+            encontrar um alvo e em seguida coletar o máximo de dados possível para realizar uma operação, seja 
+            ela qual for.
+        </p>
+        <p>
+            Antes de coletar as informações de um alvo, é importante lembrar que nessa parte o alvo 
+            sempre será um dispositivo, ou seja, um computador. Sendo assim, os dados que devem ser coletados
+            são referentes a segurança, tipo de sistema e componentes que o dispositivo possui.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Meios</h2>
+        <p>
+            Para realizar a coleta de informações de um alvo, o mais comum, após definir quem é o alvo,
+            é usar as ferramentas apropriadas. Mas quando falamos de ferramentas, existem várias para diversos
+            proprositos, então a melhor forma de escolher a ferramenta certa para uma tarefa seria analizando
+            as funcionalidades que tal ferramenta possui. Esse trabalho pode ser bastante desgastante para quem 
+            ainda está iniciando na área de T.I por completo. Por isso existem sistema operacionais, baseados em linux,
+            dotados de ferramentas apropriadas para as mais diversas finalidades. Alguns desses são:
+            <a href="https://www.kali.org/" target="_blank">Kali Linux</a>, <a href="https://www.parrotsec.org/" target="_blank">ParrotOS</a>
+            e <a href="https://www.blackarch.org/" target="_blank">Black Arch Linux</a>.
+        </p>
+        <p>
+            Os sistemas focados em segurança, normalmente são baseados em duas distribuições específicas do
+            linux, o Linux Debian e o Arch Linux. Isso ocorre porque ambas as distros são relativamente simples e
+            rudimentares. Para fins de praticidade, recomendamos que seja feita a instalação do sistema operacional
+            <strong>Kali Linux</strong>, porque é bem mais comum e já possui diversas ferramentas pre-instaladas. 
+            Existe um tutorial padrão de distribuições linux a partir de um Windows na aba de tutoriais.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Ferramentas</h2>
+        <p>
+            Uma vez tendo seu sistema instalado e configurado, é hora de entender melhor as ferramentas para 
+            coleta de informações. A ferramenta mais comum para isso é o <a href="#" target="_self">Nmap</a>,
+            que serve para coletar diversos tipos de dados de um dispositivo, como endereço IP, quais portas 
+            estão abertas, versão do sistema, enfim, possui diversas funcionalidades.
+        </p>
+        <code>
+            <div class="comando">
+                <span>nmap</span> youtube.com
+            </div>
+            <div class="saida">
+                <span>Saida:</span>
+                <pre>
+Starting Nmap 7.93 ( https://nmap.org ) at 9999-00-00 00:00 -00
+Nmap scan report for youtube.com (142.251.133.174)
+Host is up (0.056s latency).
+Other addresses for youtube.com (not scanned): 2800:3f0:4004:806::200e
+rDNS record for 142.251.133.174: rio09s05-in-f14.1e100.net
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+Nmap done: 1 IP address (1 host up) scanned in 8.18 seconds
+                </pre>
+            </div>
+        </code>
+        <p>
+            As informações relevantes que o programa exibiu o endereço IP do domínio "youtube.com" e também
+            as portas abertas que o servidor do domínio possui atualmente. O programa também pode ser usado na 
+            propria máquina para analizar as portas abertas e demais informações.
+        </p>
+    </section>
+
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="../SO/linux.html" target="_self">Anterior</a></li>
+            <li><a href="#" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="SO.html">Sistemas operacionais</a></li>
+                    <li><a href="SO/windows.html" target="_self">Windows</a></li>
+                    <li><a href="SO/macos.html" target="_self">MacOs</a></li>
+                    <li><a href="SO/linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

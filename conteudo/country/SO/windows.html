@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Sistemas Operacionais[<span style="color: antiquewhite;">Windows</span>]</h1>
+
+    <section class="container-content">
+        <h2>$Entendendo um pouco melhor</h2>
+        <p>
+            Windows é o sistema para desktops domésticos mais usado no mundo, desenvolvido pela
+            gigante microsoft, que despensa apresentações. Ele atualmente está na versão 11 e passou 
+            por diversas modificações no decorrer de sua história.
+        </p>
+        <p>
+            A princípio o sistema era baseado na <strong>linguagem C</strong> e, bem no início, 
+            era comercializado em disquetes, o que tornava os processos de instalação longos e 
+            sequenciais 
+        </p>
+        <p>
+            Uma das razões pelas quais o Windows é amplamente utilizado hoje, além do marketing da
+            Microsoft, é pela simplicidade dele se comparado a sistemas baseados em Linux, coisa que 
+            ocorre pelo fato do sistema ser um software completamente privado e, portanto, muito mais 
+            simples de ser gerenciado.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Descendo as camadas</h2>
+        <p>
+            Como nos já discutimos antes, um sistema operacional é um conjunto de softwares que 
+            tratam de coordenar os recursos de hardware, mas se você tem um pouco mais de 12 anos
+            acredito que já saiba que não existe truque de mágica nessa história, então vamos entender
+            melhor como o windows atua.
+        </p>
+        <p>
+            A começar pela divisão dos diretórios, independente de qual sistema operacional alguem
+            use, todo sistema está dividido em pastas, essas que partem de um ponto específico dentro
+            do hardware de armazenamento, chamamos esse ponto de <strong>ponto de montagem</strong>. O ponto
+            de montagem padrão do windows é, normalmente, o diretório <strong>C:\</strong>, e todas as 
+            outras pastas e arquivos são apenas 'galhos' desse ponto.
+        </p>
+        <p>
+            A partir do ponto de montagem são definidas as pastas essenciais do sistema. No caso do
+            windows elas são: <strong>Windows</strong>, <strong>Program Files</strong>, <strong>Users</strong>,
+            <strong>ProgramData</strong> e o subdiretório da pasta Windows, <strong>System32</strong>. Cada um 
+            possui arquivos essenciais para o funcionamento dos sitema, com enfase no System32, mas vamos
+            entender melhor esses diretórios.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Pastas do windows</h2>
+        <dl>
+            <dt class="def"><strong>C:\Windows\</strong></dt>
+            <dd>
+                Aqui é onde estão guardados os principais elementos para o funcionamento do sistema
+                como o próprio kernel, bibliotecas, arquivos temporarios, drivers e os arquivos de configuração
+                como fontes e pacotes de idioma.
+            </dd>
+            <dt class="def"><strong>C:\Program Files\</strong></dt>
+            <dd>
+                Aqui é onde os programas usados pelo usuário são armazenados, assim como as dependências
+                próprias de cada programa.
+            </dd>
+            <dt class="def"><strong>C:\Users\</strong></dt>
+            <dd>
+                Armazena as pastas de usuários individuais, onde cada conta de usuário 
+                tem sua própria subpasta que inclui: <strong>Desktop</strong>(Área de trabalho do usuário),
+                <strong>Documents</strong>(Documentos pessoais), <strong>Downloads</strong>(Arquivos baixados),
+                <strong>AppData</strong>(Pasta oculta que contém dados de aplicativos e configurações de programas)
+            </dd>
+            <dt class="def"><strong>C:\Temp\</strong></dt>
+            <dd>
+                Pasta temporária usada por programas para armazenar arquivos temporários.
+            </dd>
+            <dt class="def"><strong>C:\ProgramData\</strong></dt>
+            <dd>
+                Pasta oculta que contém dados de aplicativos que são compartilhados entre todos os usuários.
+            </dd>
+        </dl>
+        <p>
+            O Windows possui outras pastas, mas de início essas são as que mais nos interessam.
+        </p>
+    </section>
+
+    <section class="container-content">
+        <h2>$Bibliotecas de Ligação Dinâmica</h2>
+        <p>
+            As DLLs (Dynamic Link Libraries, ou Bibliotecas de Ligação Dinâmica) 
+            são arquivos que contêm código, dados e recursos que podem ser utilizados 
+            por múltiplos programas no Windows. Elas permitem que programas compartilhem 
+            funcionalidades sem precisar duplicar o código em cada aplicação, economizando 
+            espaço e facilitando a atualização e manutenção do sistema, e podem ser estruturadas
+            da seguinte forma: 
+        </p>
+        <dl>
+            <dt class="def"><strong>Funções%e%sub-rotinas/</strong></dt>
+            <dd>
+                usadas para realização de tarefas específicas.
+            </dd>
+            <dt class="def"><strong>Variáveis globais/</strong></dt>
+            <dd>
+                Dados que podem ser usados por outros programas.
+            </dd>
+            <dt class="def"><strong>Recursos/</strong></dt>
+            <dd>
+                Como ícones, menus, imagens, sons, etc.
+            </dd>
+        </dl>
+        <hr>
+        <p>
+            Alguns exemplos comuns de dll's são:
+        </p>
+        <dl>
+            <dt class="def"><strong>kernel32.dll/</strong></dt>
+            <dd>
+                Contém funções essenciais do sistema operacional, como gestão de memória e processos.
+            </dd>
+            <dt class="def"><strong>user32.dll/</strong></dt>
+            <dd>
+                Lida com elementos da interface do usuário, como janelas e controles gráficos.
+            </dd>
+            <dt class="def"><strong>gdi32.dll/</strong></dt>
+            <dd>
+                Lida com gráficos e impressão.
+            </dd>
+        </dl>
+        <p>
+            As DLLs ajudam a manter o sistema Windows mais eficiente e organizado,
+            evitando a duplicação de código e permitindo que várias aplicações compartilhem recursos comuns.
+        </p>
+    </section>
+
+
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="../SO.html" target="_top">Anterior</a></li>
+            <li><a href="./macos.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="../seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="../seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="../seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="SO.html">Sistemas operacionais</a></li>
+                    <li><a href="./windows.html" target="_self">Windows</a></li>
+                    <li><a href="./macos.html" target="_self">MacOs</a></li>
+                    <li><a href="./linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

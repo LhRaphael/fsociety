@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Sistemas Operacionais[<span style="color: antiquewhite;">MacOs</span>]</h1>
+
+    <section class="container-content">
+        <h2>$Entendendo um pouco melhor²</h2>
+        <p>
+            O macOS é o sistema operacional desenvolvido pela Apple para seus computadores, 
+            como o MacBook, iMac e Mac Pro. Ele é conhecido por sua interface gráfica amigável, 
+            alto nível de integração com o hardware da Apple e foco em segurança e privacidade.
+        </p>
+        <p>
+            Ele é baseado no Unix, o que oferece uma robusta estrutura de segurança e estabilidade. 
+            Isso também permite compatibilidade com comandos e ferramentas do Unix.
+        </p>
+        <p>
+            Um dos pontos fortes do macOS é sua integração com outros dispositivos Apple, como iPhones, 
+            iPads, Apple Watch e Apple TV. Funções como Handoff, Continuity e AirDrop permitem uma 
+            transição contínua entre dispositivos.
+        </p>
+        <p>
+            Como o sistema é otimizado para o hardware específico da Apple, ele é reconhecido por seu 
+            desempenho estável e alta eficiência energética, principalmente nos Macs com chips Apple 
+            Silicon (como o M1 e M2).
+        </p>
+    </section>
+    
+    <section class="container-content">
+        <h2>$Estrutura do sistema</h2>
+        <p>
+            O MacOs é um sistema baseado em uma arquitetura modular, que significa que possui 
+            diversos componentes que funcionam de forma independente e intercambiáveis. Em resumo,
+            a arquiteura do MacOs é definida da seguinte forma:
+        </p>
+        <dl>
+            <dt class="def"><strong>Hardware/</strong></dt>
+            <dd>
+                os componentes físicos dos computadores da Apple, como processadores, memória, 
+                SSDs, GPUs, e outros dispositivos periféricos. A Apple projeta seu hardware 
+                especificamente para se integrar ao macOS, especialmente com a introdução dos 
+                chips Apple Silicon.
+            </dd>
+            <dt class="def"><strong>Kernel/</strong></dt>
+            <dd>
+                O XNU ("X is Not Unix") é o kernel do macOS e está no centro do sistema operacional. 
+                Ele gerencia interações básicas entre hardware e software, como gerenciamento de 
+                processos, memória, threads e drivers de dispositivos.
+            </dd>
+            <dt class="def"><strong>Sistema%de%Arquivos/</strong></dt>
+            <dd>
+                O Apple File System (APFS) é o sistema de arquivos moderno utilizado no macOS. 
+                Ele oferece maior segurança, desempenho, e suporte a recursos como criptografia, 
+                instantâneos (snapshots), clonagem de arquivos e pastas e melhor gerenciamento de discos SSD.
+            </dd>
+            <dt class="def"><strong>Frameworks%e%Bibliotecas/</strong></dt>
+            <dd>
+                O macOS oferece diversas bibliotecas e frameworks que suportam o desenvolvimento de aplicativos e serviços.
+            </dd>
+            <dt class="def"><strong>Camada%de%Interface%Gráfica/</strong></dt>
+            <dd>
+                O macOS possui uma interface gráfica centrada no Aqua, o nome da interface de usuário que define o estilo visual e a interação do sistema.
+            </dd>
+            <dt class="def"><strong>Camada%de%Aplicativos/</strong></dt>
+            <dd>
+                O macOS é entregue com uma série de aplicativos nativos, como o Safari, Mail, Calendário, e a suíte de produtividade iWork (Pages, Keynote, Numbers).
+            </dd>
+            <dt class="def"><strong>Segurança/</strong></dt>
+            <dd>
+                O sistema possui uma camada focada apenas na proteção dos dados do usuário, essa camada está acima 
+                da camada de aplicativos pois ela é composta por aplicações de segurança. 
+            </dd>
+            <dt class="def"><strong>Virtualização%e%Contêineres/</strong></dt>
+            <dd>
+                O macOS suporta virtualização, permitindo que os usuários executem outros sistemas operacionais 
+                dentro do macOS. Com a tecnologia Hypervisor, os desenvolvedores podem executar e testar diferentes 
+                ambientes em contêineres ou máquinas virtuais.
+            </dd>
+        </dl>
+    </section>
+    <section class="container-content">
+        <h2>$Aprofundando</h2>
+        <p>
+            O kernel desse sistema não é um monolito como outros, ele possui elementos que trabalham de forma 
+            independente, o <strong>Mach</strong>, que lida com operações de baixo nível, como gerenciamento de memória e threads,
+            o <strong>BSD</strong>, responsável por aspectos como o sistema de arquivos, rede e segurança e o <strong>I/O Kit</strong>, que 
+            fornece a interface para gerenciar drivers de dispositivos e interagir com hardware externo (como impressoras, câmeras e dispositivos USB).
+        </p>
+        <p>
+            Além disso, existem diversos outros componentes no sistema, como <strong>Core Service</strong>,
+            que fornece APIs para funcionalidades de nível de sistema, como gerenciamento de arquivos, manipulação de dados e persistência de dados; e 
+            bibliotecas como <strong>Cocoa</strong>, Um conjunto de frameworks usado para construir interfaces gráficas no macOS.
+        </p>
+        <p>
+            Tratando da parte de segurança do sistema, alguns elementos que o sistema possui são:
+        </p>
+        <dl>
+            <dt class="def"><strong>Gatekeeper/</strong></dt>
+            <dd>
+                Impede que o usuário instale ou execute aplicativos que não tenham sido assinados e verificados pela Apple.
+            </dd>
+            <dt class="def"><strong>FileVault/</strong></dt>
+            <dd>
+                Oferece criptografia completa do disco para proteger os dados do usuário.
+            </dd>
+            <dt class="def"><strong>Sandboxing/</strong></dt>
+            <dd>
+                Isola os aplicativos uns dos outros para minimizar os danos que um app pode causar ao sistema ou a outros apps.
+            </dd>
+            <dt class="def"><strong>XProtect/</strong></dt>
+            <dd>
+                Proteção contra malware integrada ao macOS, atualizada regularmente para defender contra novas ameaças.
+            </dd>
+            <dt class="def"><strong>System%Integrity%Protection/</strong></dt>
+            <dd>
+                Impede que softwares maliciosos modifiquem arquivos e pastas cruciais do sistema.
+            </dd>
+        </dl>
+    </section>
+    <section class="container-content">
+        <h2>$Diretórios</h2>
+        <p>
+            Os diretórios são distribuidos de forma semelhante aos diretórios dos Unix
+        </p>
+        <dl>
+            <dt class="def"><strong>/Applications/</strong></dt>
+            <dd>
+                Contém todos os aplicativos instalados no macOS. É onde 
+                os usuários geralmente colocam aplicativos baixados ou instalados 
+                manualmente, assim como muitos dos aplicativos pré-instalados.
+            </dd>
+            <dt class="def"><strong>/Library/</strong></dt>
+            <dd>
+                Esta pasta contém arquivos de suporte do sistema e de aplicativos, como fontes, 
+                preferências, extensões e bibliotecas necessárias para o funcionamento do macOS e de seus programas.
+            </dd>
+            <dt class="def"><strong>/System/</strong></dt>
+            <dd>
+                Contém os principais arquivos e componentes do sistema operacional macOS, como o kernel, drivers e 
+                outros elementos essenciais para o funcionamento do sistema
+            </dd>
+            <dt class="def"><strong>/Users/</strong></dt>
+            <dd>
+                Esta pasta contém todas as contas de usuários do sistema. Cada usuário tem uma subpasta 
+                aqui com seu próprio diretório pessoal.
+            </dd>
+            <dt class="def"><strong>/bin/</strong></dt>
+            <dd>
+                Esta pasta contém executáveis de programas essenciais e comandos usados no terminal do macOS. 
+                Exemplos incluem comandos como bash, cat, ls, e outros comandos comuns de linha de comando Unix.
+            </dd>
+            <dt class="def"><strong>/sbin/</strong></dt>
+            <dd>
+                Similar à pasta /bin, mas contém programas e comandos de sistema que só podem ser executados por 
+                um usuário com privilégios administrativos, como o sudo.
+            </dd>
+            <dt class="def"><strong>/usr/</strong></dt>
+            <dd>
+                Contém arquivos, bibliotecas e programas do usuário (mas geralmente relacionados ao sistema), 
+                como aplicativos Unix que não são parte essencial do macOS.
+            </dd>
+            <dt class="def"><strong>/private/</strong></dt>
+            <dd>
+                Contém arquivos temporários, logs do sistema e outras informações privadas do sistema que geralmente não são acessadas diretamente pelo usuário.
+            </dd>
+            <dt class="def"><strong>/Volumes/</strong></dt>
+            <dd>
+                A pasta onde o macOS monta dispositivos de armazenamento, como discos externos, unidades USB e volumes de rede. Quando você conecta um 
+                drive USB ou disco externo, ele aparece como uma subpasta em /Volumes.
+            </dd>
+            <dt class="def"><strong>/dev/</strong></dt>
+            <dd>
+                Contém arquivos de dispositivos (device files), que são interfaces para comunicação com dispositivos de hardware, como discos rígidos, teclados, etc.
+            </dd>
+            <dt class="def"><strong>/tmp/</strong></dt>
+            <dd>
+                Um diretório temporário que o macOS usa para armazenar arquivos que só precisam existir durante a execução de um programa. O conteúdo desta 
+                pasta geralmente é apagado automaticamente pelo sistema após reinicializações.
+            </dd>
+            <dt class="def"><strong>/var/</strong></dt>
+            <dd>
+                Contém arquivos variáveis, como logs do sistema e dados que mudam frequentemente. Algumas subpastas importantes:
+                <strong>/var/log</strong>, que armazena arquivos de log do sistema e aplicativos e <strong>/var/mail</strong>, que serve para 
+                armazenamento de e-mails locais, caso o sistema esteja configurado para tal.
+            </dd>
+        </dl>
+        <p>
+            Por hora, isso é mais que suficiente para entendermos o sistema MacOs.
+        </p>
+    </section>
+
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="./windows.html" target="_self">Anterior</a></li>
+            <li><a href="./linux.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Os Caba Otario&#8482;</span>
+        <div class="main-footer">
+            <div>
+                <span>Conteúdo</span>
+                <ol>
+                    <li><a href="seguranca.html" target="_self">Segurança</a></li>
+                    <li><a href="../seguranca/tcp_ip.html" target="_self">Tcp/Ip</a></li>
+                    <li><a href="../seguranca/ips.html" target="_self">IP's</a></li>
+                    <li><a href="../seguranca/osi.html" target="_self">OSI</a></li>
+                    <li><a href="SO.html">Sistemas operacionais</a></li>
+                    <li><a href="./windows.html" target="_self">Windows</a></li>
+                    <li><a href="./macos.html" target="_self">MacOs</a></li>
+                    <li><a href="./linux.html" target="_self">Linux</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Galhos</span>
+                <ol>
+                    <li><a href="../../childs/definicoes.html" target="_self">Definições</a></li>
+                    <li><a href="../../childs/hats.html" target="_self">Hats</a></li>
+                    <li><a href="../../childs/protocolos.html" target="_self">Protocolos</a></li>
+                </ol>
+            </div>
+            <div>
+                <span>Menu</span>
+                <ol>
+                    <li><a href="../../menu/referencias.html" target="_self">Referências</a></li>
+                    <li><a href="../../menu/ferramentas.html" target="_self">Ferramentas</a></li>
+                    <li><a href="../../menu/tutoriais.html" target="_self">Tutoriais</a></li>
+                    <li><a href="../../menu/informacoes.html" target="_self">Informações</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
